@@ -1,0 +1,29 @@
+[
+<% 3.times do |n| %>
+	<% if n == 2 %>
+		{"group_name":"Group<%= n%>",
+		"group_id":<%= n %>,
+		"post_id":<%= n %>,
+		"post_name":"Post<%= n %>",
+		"line_id":<%= n %>,
+		"company":"Company",
+		"city":"Toronto",
+		"state":"Ontario",
+		"start_time": 2014,
+		"end_time": 2015,
+		"bullet":"bullet<%= n %>"}
+	<% else %>
+		{"group_name":"Group<%= n%>",
+		"group_id":<%= n %>,
+		"post_id":<%= n %>,
+		"post_name":"Post<%= n %>",
+		"line_id":<%= n %>,
+		"company":"Company",
+		"city":"Toronto",
+		"state":"Ontario",
+		"start_time": 2014,
+		"end_time": 2015,
+		"bullet":"bullet<%= n %>"},
+	<% end %>
+<% end %>
+]

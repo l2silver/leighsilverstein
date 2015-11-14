@@ -1,0 +1,4 @@
+simple_job_post:
+  title: "Example Job Post"
+  raw: "Example Job Line 1/nExample Job Line 2"
+  id: 1

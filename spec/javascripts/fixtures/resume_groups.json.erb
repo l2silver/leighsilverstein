@@ -1,0 +1,39 @@
+[
+<% 3.times do |n| %>
+	<% if n == 2 %>
+		{"name":"Group<%= n%>",
+		"id":<%= n %>,
+		"resume_posts":[{
+			"id":"<%=n%>",
+			"name":"post<%=n%>",
+			"company":"company<%=n%>",
+			"city":"Toronto",
+			"state":"On",
+			"start_time": "Jan 2014",
+			"end_time": "Dec 2015",
+			"resume_lines": [{
+				"id": "<%= n %>",
+				"bullet": "bullet<%=n%>"
+				}]
+			}]
+		}
+	<% else %>
+		{"name":"Group<%= n%>",
+		"id":<%= n %>,
+		"resume_posts": [{
+			"id":<%=n%>,
+			"name":"post<%=n%>",
+			"company":"company<%=n%>",
+			"city":"Toronto",
+			"state":"On",
+			"start_time": "Jan 2014",
+			"end_time": "Dec 2015",
+			"resume_lines": [{
+				"id": <%= n %>,
+				"bullet": "bullet<%=n%>"
+				}]
+			}]
+		},
+	<% end %>
+<% end %>
+]

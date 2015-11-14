@@ -1,0 +1,12 @@
+# users.yml
+<% [1,2].each do |n|%>
+user_<%=n%>:
+  email: "example_<%=n%>@cvstom.org"
+  password_digest: <%= User.digest('password') %>
+  id: <%= 5000000 + n %>
+<% end %>
+
+activated_user:
+  email: "activated_user@cvstom.org"
+  password_digest: <%= User.digest('password') %>
+  activated: true

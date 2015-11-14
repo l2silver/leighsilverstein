@@ -1,0 +1,56 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap-sprockets";
+@import "bootstrap-sass-official/assets/stylesheets/bootstrap";
+
+#main {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	overflow: hidden;
+	}
+
+#main #background-image{
+	background-size: cover;
+	position: absolute;
+	width: 0;
+	height: 100%;
+	z-index: 0;
+	transition: all 1s ease;
+	left: 100%;
+}
+
+#main #container{
+	position: absolute;
+	z-index: 1;
+	left: 50%;
+	top: 50%;
+	margin-top: -1%s;
+	transform: translate(-50%, -50%);
+}
+
+#main #container #icons {
+	text-align: center;
+}
+
+#main #container #icons i{
+	margin: 0 5px;
+}
+
+#main #background-image.show{
+	left: 0; 	
+	width: 100%;
+}
+
+#main #background-image.pencil{
+	background: image-url("resume.jpg");
+}
+
+#main #background-image.git{
+	background: image-url("resume.jpg");
+}
+
+#main #background-image.list-ul{
+	background: image-url("resume.jpg");
+}
