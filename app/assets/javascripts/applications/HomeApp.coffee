@@ -8,6 +8,14 @@ app.config([ '$routeProvider',
         templateUrl: "main.html"
         controller: 'MainController'
       )
+      .when('/resume',
+        templateUrl: "resume.html"
+        controller: 'ResumeController'
+      )
+      .when('/writings',
+        templateUrl: "writing.html"
+        controller: 'WritingController'
+      )
       .otherwise('job_posts/:job_post_id',
         templateURL: "job_post/job_post.html"
         controller: "JobPostController"

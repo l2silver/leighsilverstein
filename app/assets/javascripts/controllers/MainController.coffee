@@ -1,15 +1,23 @@
 controllers = angular.module('controllers')
 
 controllers.controller "MainController", ['$scope', '$resource', 
-'globalService', ($scope, $resource, globalService) ->
-	$scope.icons = ["list-ul", "git", "pencil"]
+'globalService', '$location', "$window", ($scope, $resource, globalService, $location, $window) ->
+	$scope.icons = {
+		"list-ul" : "resume"
+		"git" : "git"
+		"pencil" : "writings"
+	}
+
 	$scope.changeBackground = (icon_name)->
-		console.log("over")
 		$("#main #background-image").removeClass("show")
 		$("#main #background-image." + icon_name).addClass "show"
 		return true
 	$scope.resetBackground = ()->
-		console.log("leave")
 		$("#main #background-image").removeClass("show")
 		return true
+	$scope.goTo = (path)->
+		if path == "git"
+			$window.open('http://facebook.com');
+		else
+			$location.path(path)
 ]
