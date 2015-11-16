@@ -1,12 +1,12 @@
 <section id="resume">
-	<div id="container">
-		<div class="row heading">
+	<div class="container">
+		<div id="header" class="row">
 			<div class="col-sm-6">
-				<p class="heading">Leigh Silverstein</p>
+				<p>Leigh Silverstein</p>
 			</div>
 			<div class="col-sm-6">
-				<ul>
-					<li>14 Millicent Ave
+				<ul class="list-unstyled">
+			 		<li>14 Millicent Ave
 					</li>
 					<li>Toronto, On
 					</li>
@@ -15,6 +15,19 @@
 					<li>lsilversteinto@gmail.com
 					</li>
 				</ul>
+			</div>
+		</div>
+		<div id="body">	
+			<div class="row resume-group" ng-repeat="resume_group in resume">
+				<p>{{resume_group.group}}</p>
+				<div class="resume-post" ng-repeat="resume_post in resume_group.resume_posts">
+					<span>{{resume_post.start_time + "-" + resume_post.end_time}}</span>
+					<p>{{resume_post.title + ", " + resume_post.company + " (" + resume_post.city + ", " + resume_post.state + ")"}}
+					</p>
+					<ul>
+						<li ng-repeat="resume_line in resume_post.resume_lines">{{resume_line.bullet}}</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>

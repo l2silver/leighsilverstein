@@ -4,68 +4,104 @@
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap-sprockets";
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap";
 
-#main #background-image.pencil{
-	background: image-url("writing.jpg") no-repeat center center fixed;
-	background-size: cover;
-
-}
-
-#main #background-image.git{
-	background: image-url("git.png") no-repeat center center fixed;
-  	background-size: cover;
-
-}
-
-#main #background-image.list-ul{
-	background: image-url("resume.png") no-repeat center center fixed;
-  	background-size: cover;
-
-}
-
 #main {
 	height: 100%;
 	width: 100%;
 	position: fixed;
 	overflow: hidden;
+	#background-image{
+		position: absolute;
+		width: 0;
+		height: 100%;
+		z-index: 0;
+		transition: all 1s ease;
+		left: 100%;
+		&.pencil{
+			background: image-url("writing.jpg") no-repeat center center fixed;
+			background-size: cover;
+		}
+		&.git{
+			background: image-url("git.png") no-repeat center center fixed;
+			background-size: cover;
+
+		}
+		&.list-ul{
+			background: image-url("resume.png") no-repeat center center fixed;
+			background-size: cover;
+
+		}
+		&.show{
+			left: 0; 	
+			width: 100%;
+		}
+	}
+	#background-image-overlay{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		background: rgba(255, 255, 255, 0.6);
+	}
+	#container{
+		position: absolute;
+		z-index: 2;
+		left: 50%;
+		top: 50%;
+		margin-top: -1%s;
+		transform: translate(-50%, -50%);
+		#icons {
+			text-align: center;
+			i{
+				margin: 0 5px;
+				cursor: pointer;
+			}
+		}
+	}
 }
 
-#main #background-image{
-	position: absolute;
-	width: 0;
-	height: 100%;
-	z-index: 0;
-	transition: all 1s ease;
-	left: 100%;
-	opacity: 25%;
-}
+$blue : #777BC5;
 
-#main #background-image-overlay{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	background: rgba(255, 255, 255, 0.6);
-}
-
-#main #container{
-	position: absolute;
-	z-index: 2;
-	left: 50%;
-	top: 50%;
-	margin-top: -1%s;
-	transform: translate(-50%, -50%);
-}
-
-#main #container #icons {
-	text-align: center;
-}
-
-#main #container #icons i{
-	margin: 0 5px;
-	cursor: pointer;
-}
-
-#main #background-image.show{
-	left: 0; 	
-	width: 100%;
+#resume{
+	.container{
+		max-width: 900px;
+		#header{
+			p{
+				font-size: 2em;
+				color: $blue;
+				text-align: left;
+			}
+			ul{
+				li{
+					font-size: 1em;
+					text-align: right;
+				}
+			}
+		}
+		#body{
+			.resume-group{
+				p{
+					font-size: 1.5em;
+					color: $blue;
+					text-align: left;
+				}
+			}
+			.resume-post{
+				p{
+					font-size: 1em;
+					color: #000;
+					text-align: left;
+				}
+				span{
+						float: right;
+					}
+			}
+			.resume-lines{
+				p{
+					font-size: 1.5em;
+					color: $blue;
+					text-align: left;
+				}
+			}
+		}
+	}
 }

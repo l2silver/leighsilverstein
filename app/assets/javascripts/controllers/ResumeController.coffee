@@ -2,14 +2,44 @@ controllers = angular.module('controllers')
 
 controllers.controller "ResumeController", ['$scope', '$resource', 
 'globalService', ($scope, $resource, globalService) ->
-	$scope.icons = ["list-ul", "git", "pencil"]
-	$scope.changeBackground = (icon_name)->
-		console.log("over")
-		$("#main #background-image").removeClass("show")
-		$("#main #background-image." + icon_name).addClass "show"
-		return true
-	$scope.resetBackground = ()->
-		console.log("leave")
-		$("#main #background-image").removeClass("show")
-		return true
+	$scope.resume = [
+		{
+			group: "Experience"
+			resume_posts: [
+				{
+					title: "Full Stack Developer"
+					company: "Simplistics Inc."
+					city: "Toronto"
+					state: "ON"
+					start_time: "Aug 2015"
+					end_time: "Current"
+					resume_lines: [
+						{
+							bullet: ""
+						}
+					]
+				}
+			]
+		},{
+			group: "Education"
+			resume_posts: [
+				{
+					title: "Full Stack Developer"
+					company: "Simplistics Inc."
+					city: "Toronto"
+					state: "ON"
+					start_time: "Aug 2015"
+					end_time: "Current"
+					resume_lines: [
+						{
+							bullet: ""
+						},
+						{
+							bullet: ""
+						},
+					]
+				}
+			]
+		}
+	]
 ]
