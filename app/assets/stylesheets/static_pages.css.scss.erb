@@ -4,13 +4,13 @@
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap-sprockets";
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap";
 
-#main {
+#home {
 	height: 100%;
 	width: 100%;
 	position: fixed;
-	overflow: hidden;
+	overflow-y: scroll;
 	#background-image{
-		position: absolute;
+		position: fixed;
 		width: 0;
 		height: 100%;
 		z-index: 0;
@@ -34,14 +34,15 @@
 			left: 0; 	
 			width: 100%;
 		}
+		&.overlay{
+			background: rgba(255, 255, 255, 0.6);
+			z-index: 1;
+		}
 	}
-	#background-image-overlay{
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		z-index: 1;
-		background: rgba(255, 255, 255, 0.6);
-	}
+}
+#main{
+	height: 100%;
+	width: 100%;	
 	#container{
 		position: absolute;
 		z-index: 2;
@@ -63,6 +64,11 @@ $blue : #777BC5;
 
 #resume{
 	.container{
+		z-index: 2;
+		position: relative;
+		height:100%;
+		width: 100%;
+		margin-top: 100px;
 		max-width: 900px;
 		#header{
 			p{
@@ -94,6 +100,14 @@ $blue : #777BC5;
 				span{
 						float: right;
 					}
+				ul{
+					li{
+						text-index: 10px;
+					}
+					li + li{
+					content: "<hr>";
+					}
+				}
 			}
 			.resume-lines{
 				p{
@@ -102,6 +116,75 @@ $blue : #777BC5;
 					text-align: left;
 				}
 			}
+		}
+	}
+}
+
+#writing{
+	.container{
+		z-index: 2;
+		position: relative;
+		height:100%;
+		width: 100%;
+		margin-top: 100px;
+		max-width: 900px;
+		#header{
+			p{
+				font-size: 2em;
+				color: $blue;
+				text-align: left;
+			}
+			ul{
+				li{
+					font-size: 1em;
+					text-align: right;
+				}
+			}
+		}
+		#body{
+			.resume-group{
+				p{
+					font-size: 1.5em;
+					color: $blue;
+					text-align: left;
+				}
+			}
+			.resume-post{
+				p{
+					font-size: 1em;
+					color: #000;
+					text-align: left;
+				}
+				span{
+						float: right;
+					}
+				ul{
+					li{
+						text-index: 10px;
+					}
+					li + li{
+					content: "<hr>";
+					}
+				}
+			}
+			.resume-lines{
+				p{
+					font-size: 1.5em;
+					color: $blue;
+					text-align: left;
+				}
+			}
+		}
+	}
+}
+
+nav {
+	#icons {
+		text-align:center;
+		i {
+			height: 100%;
+			vertical-align: center;
+			padding: 17px 10px;
 		}
 	}
 }

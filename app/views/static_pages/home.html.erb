@@ -1,4 +1,8 @@
-<div ng-app="HomeApp" ng-controller="HomeController">
+<div ng-app="HomeApp" ng-controller="HomeController" id="home">
 	<div ng-init="setauthenticityToken('<%=form_authenticity_token %>')"></div>
+	<div id="background-image" class="overlay"></div>
+	<div id="background-image" class="pencil"></div>
+	<div id="background-image" class="git"></div>
+	<div id="background-image" class="list-ul"></div>
 	<div ng-view></div>
 </div>

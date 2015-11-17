@@ -1,0 +1,17 @@
+<section id="writing">
+	<navigation></navigation>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-2">
+				<ul>
+					<li ng-repeat="writing in writings">{{writing.name}}</li>
+				</ul>
+			</div>
+			<div class="col-sm-10">
+				<div ng-repeat="writing in writings" ng-show="current_writing == writing.name">
+					<div ng-include="'writings/' + writing.link_name">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

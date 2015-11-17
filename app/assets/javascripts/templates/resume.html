@@ -1,4 +1,7 @@
 <section id="resume">
+
+	<navigation></navigation>	
+
 	<div class="container">
 		<div id="header" class="row">
 			<div class="col-sm-6">
@@ -19,14 +22,18 @@
 		</div>
 		<div id="body">	
 			<div class="row resume-group" ng-repeat="resume_group in resume">
-				<p>{{resume_group.group}}</p>
-				<div class="resume-post" ng-repeat="resume_post in resume_group.resume_posts">
-					<span>{{resume_post.start_time + "-" + resume_post.end_time}}</span>
-					<p>{{resume_post.title + ", " + resume_post.company + " (" + resume_post.city + ", " + resume_post.state + ")"}}
-					</p>
-					<ul>
-						<li ng-repeat="resume_line in resume_post.resume_lines">{{resume_line.bullet}}</li>
-					</ul>
+				<div class="col-sm-12">
+					<p>{{resume_group.group}}</p>
+					<div class="resume-post" ng-repeat="resume_post in resume_group.resume_posts">
+						<div class='resume-post' ng-show="resume_post.title != ''">
+							<span>{{resume_post.start_time + "-" + resume_post.end_time}}</span>
+							<p>{{resume_post.title + ", " + resume_post.company + " (" + resume_post.city + ", " + resume_post.state + ")"}}
+							</p>
+						</div>
+						<ul>
+							<li ng-repeat="resume_line in resume_post.resume_lines">{{resume_line.bullet}}</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>

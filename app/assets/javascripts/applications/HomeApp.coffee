@@ -39,3 +39,12 @@ app.service 'globalService', [ '$rootScope' , ($rootScope)->
 
   return globalService
 ]
+
+app.directive 'iconnav', ()->
+  return {
+    templateUrl: 'icon-nav.html'
+  }
+app.directive 'navigation', ()->
+  return {
+    templateUrl: 'nav.html'
+  }

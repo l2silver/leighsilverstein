@@ -1,14 +1,6 @@
 <section id="main">
 	<div id="container">
 		<p>Leigh Silverstein</p>
-		<div id="icons">
-			<i ng-repeat="(icon, location) in icons" class="fa fa-{{icon}}" ng-click="goTo(location)" ng-mouseover="changeBackground(icon)" ng-mouseleave="resetBackground()"></i>
-		</div>
+		<iconnav></iconnav>
 	</div>
-	<div id="background-image-overlay"></div>
-	<div id="background-image" class="pencil"></div>
-	<div id="background-image" class="git"></div>
-	<div id="background-image" class="list-ul"></div>
 </section>
-
-
