@@ -3,9 +3,10 @@ controllers = angular.module('controllers')
 controllers.controller "HomeController", ['$scope', '$resource', 
 'globalService', '$window', '$location', ($scope, $resource, globalService, $window, $location) ->
 	$scope.icons = {
-		"list-ul" : "resume"
-		"git" : "git"
-		"pencil" : "writings"
+		"envelope"	: ""
+		"list-ul" 	: "resume"
+		"git" 		: "git"
+		"pencil" 	: "writings"
 	}
 	$scope.changeBackground = (icon_name)->
 		$("#home #background-image").removeClass("show")

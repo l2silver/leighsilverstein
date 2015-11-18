@@ -1,8 +1,7 @@
 <div ng-app="HomeApp" ng-controller="HomeController" id="home">
+	<navigation></navigation>
 	<div ng-init="setauthenticityToken('<%=form_authenticity_token %>')"></div>
 	<div id="background-image" class="overlay"></div>
-	<div id="background-image" class="pencil"></div>
-	<div id="background-image" class="git"></div>
-	<div id="background-image" class="list-ul"></div>
-	<div ng-view></div>
+	<div id="background-image" ng-repeat="(icon_name, icon_url) in icons" class="{{icon_name}}"></div>
+	<div ng-view class="content-view"></div>
 </div>

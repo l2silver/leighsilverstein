@@ -30,6 +30,11 @@
 			background-size: cover;
 
 		}
+		&.envelope{
+			background: #fff;
+			background-size: cover;
+
+		}
 		&.show{
 			left: 0; 	
 			width: 100%;
@@ -48,15 +53,10 @@
 		z-index: 2;
 		left: 50%;
 		top: 50%;
-		margin-top: -1%s;
+		margin-top: -1%;
+		margin-left: 10px;
 		transform: translate(-50%, -50%);
-		#icons {
-			text-align: center;
-			i{
-				margin: 0 5px;
-				cursor: pointer;
-			}
-		}
+		text-align: center;
 	}
 }
 
@@ -128,50 +128,25 @@ $blue : #777BC5;
 		width: 100%;
 		margin-top: 100px;
 		max-width: 900px;
-		#header{
-			p{
-				font-size: 2em;
-				color: $blue;
-				text-align: left;
-			}
-			ul{
-				li{
-					font-size: 1em;
-					text-align: right;
-				}
+		ul{
+			&.list-unstyled{
+				margin-left: 40px;
+				cursor: pointer;
 			}
 		}
-		#body{
-			.resume-group{
-				p{
-					font-size: 1.5em;
-					color: $blue;
-					text-align: left;
+
+		.writing-container{
+			transition: 0.25s ease all;
+			&.ng-hide{
+				opacity: 0;
+				&.ng-hide-active{
+					opacity: 1;
 				}
 			}
-			.resume-post{
-				p{
-					font-size: 1em;
-					color: #000;
-					text-align: left;
-				}
-				span{
-						float: right;
-					}
-				ul{
-					li{
-						text-index: 10px;
-					}
-					li + li{
-					content: "<hr>";
-					}
-				}
-			}
-			.resume-lines{
-				p{
-					font-size: 1.5em;
-					color: $blue;
-					text-align: left;
+			&.ng-show{
+				opacity: 1;
+				&.ng-show-active{
+					opacity: 0;
 				}
 			}
 		}
@@ -185,6 +160,23 @@ nav {
 			height: 100%;
 			vertical-align: center;
 			padding: 17px 10px;
+			cursor: pointer;
+		}
+	}
+}
+
+.content-view{
+	transition: 0.5s ease all;
+	&.ng-enter{
+	 	opacity: 1;
+		&.ng-enter-active {
+		  opacity: 0;
+		}
+	}
+	&.ng-leave{
+	 	opacity: 1;
+		&.ng-leave-active {
+		  opacity: 0;
 		}
 	}
 }

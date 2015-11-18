@@ -2,6 +2,7 @@ asset 'angular'
 asset 'angular-route'
 asset 'angular-resource'
 asset 'angular-mocks'
+asset 'angular-animate', '1.3'
 asset 'forms-angular'
 asset 'bootstrap-sass-official'
 

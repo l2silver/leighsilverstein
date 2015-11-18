@@ -1,4 +1,4 @@
-app = angular.module('HomeApp', ['ng','templates', 'controllers', 'ngResource', "ngRoute"])
+app = angular.module('HomeApp', ['ng','templates', 'controllers', 'ngResource', "ngRoute", "ngAnimate"])
 angular.module('controllers', [])
 
 app.config([ '$routeProvider',

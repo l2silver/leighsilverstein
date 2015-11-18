@@ -1,14 +1,16 @@
 <section id="writing">
-	<navigation></navigation>
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-2">
+			<div class="col-sm-4 col-md-3 col-lg-2">
 				<ul>
-					<li ng-repeat="writing in writings">{{writing.name}}</li>
+					<li ng-repeat="writing in writings" ng-show="writing.name == current_writing">{{writing.name}}</li>
+				</ul>
+				<ul class="list-unstyled">
+					<li ng-repeat="writing in writings" ng-click="changeCurrentWriting(writing.name)" ng-show="writing.name != current_writing">{{writing.name}}</li>
 				</ul>
 			</div>
-			<div class="col-sm-10">
-				<div ng-repeat="writing in writings" ng-show="current_writing == writing.name">
+			<div class="col-sm-8 col-md-9 col-lg-10">
+				<div ng-repeat="writing in writings" ng-show="current_writing == writing.name" class="writing-container">
 					<div ng-include="'writings/' + writing.link_name">
 				</div>
 			</div>
