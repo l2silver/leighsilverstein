@@ -1,6 +1,6 @@
 controllers = angular.module('controllers')
 
-controllers.controller "MainController", ['$scope', '$resource', 
-'globalService', ($scope, $resource, globalService) ->
-	
+controllers.controller "MainController", ['$scope', 
+'globalService', ($scope, globalService) ->
+	$scope.email = "lsilversteinto@gmail.com"
 ]

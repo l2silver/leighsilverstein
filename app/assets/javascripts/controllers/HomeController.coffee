@@ -1,17 +1,17 @@
 controllers = angular.module('controllers')
 
 controllers.controller "HomeController", ['$scope', '$resource', 
-'globalService', '$window', '$location', ($scope, $resource, globalService, $window, $location) ->
+'globalService', '$window', '$location', '$animate', ($scope, $resource, globalService, $window, $location, $animate) ->
 	$scope.icons = {
-		"envelope"	: ""
-		"list-ul" 	: "resume"
+		"envelope"	: "/"
 		"git" 		: "git"
+		"list-ul" 	: "resume"
 		"pencil" 	: "writings"
 	}
 	$scope.changeBackground = (icon_name)->
 		$("#home #background-image").removeClass("show")
-		$("#home #background-image." + icon_name).addClass "show"
 		$("#home #background-image.overlay").addClass "show"
+		$("#home #background-image." + icon_name).addClass "show"
 		return true
 	$scope.resetBackground = ()->
 		$("#home #background-image").removeClass("show")

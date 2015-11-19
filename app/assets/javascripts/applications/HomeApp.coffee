@@ -16,10 +16,6 @@ app.config([ '$routeProvider',
         templateUrl: "writing.html"
         controller: 'WritingController'
       )
-      .otherwise('job_posts/:job_post_id',
-        templateURL: "job_post/job_post.html"
-        controller: "JobPostController"
-      )
 ])
 
 app.service 'globalService', [ '$rootScope' , ($rootScope)->
