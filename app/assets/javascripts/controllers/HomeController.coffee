@@ -4,9 +4,9 @@ controllers.controller "HomeController", ['$scope', '$resource',
 'globalService', '$window', '$location', '$animate', ($scope, $resource, globalService, $window, $location, $animate) ->
 	$scope.icons = {
 		"envelope"	: "/"
-		"git" 		: "git"
-		"list-ul" 	: "resume"
-		"pencil" 	: "writings"
+		"git" 		: "/git"
+		"list-ul" 	: "/resume"
+		"pencil" 	: "/writings"
 	}
 	$scope.changeBackground = (icon_name)->
 		$("#home #background-image").removeClass("show")
