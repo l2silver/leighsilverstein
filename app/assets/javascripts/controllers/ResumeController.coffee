@@ -15,7 +15,7 @@ controllers.controller "ResumeController", ['$scope', '$resource',
 					end_time: "Current"
 					resume_lines: [
 						{
-							bullet: "Using a combination of webpack, redux, and react, and my own two-way-rest plugin, developed complex websites using the most current frontend technologies"
+							bullet: "Used a combination of webpack, redux, react, and my own two-way-rest plugin, to develop complex websites with the most current frontend technologies"
 						},
 						{
 							bullet: "Brought BDD, and node plugins to the workplace to significantly speed up development time"
