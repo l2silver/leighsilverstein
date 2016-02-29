@@ -7,7 +7,7 @@ controllers.controller "ResumeController", ['$scope', '$resource',
 			group: "Experience"
 			resume_posts: [
 				{
-					title: "Full Stack Developer"
+					title: "Web Developer"
 					company: "Simplistics Inc."
 					city: "Toronto"
 					state: "ON"
