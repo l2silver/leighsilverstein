@@ -15,13 +15,13 @@ controllers.controller "ResumeController", ['$scope', '$resource',
 					end_time: "Current"
 					resume_lines: [
 						{
-							bullet: "Collaborating with clients to find the optimal combination of in-house development with 3rd party software to produce a  web product that is within budget and completed before the deadline"
+							bullet: "Using a combination of webpack, redux, and react, and my own two-way-rest plugin, developed complex websites using the most current frontend technologies"
 						},
 						{
-							bullet: "Identifying relevant information and content for clients to improve SEO and the (UX) user experience"
+							bullet: "Brought BDD, and node plugins to the workplace to significantly speed up development time"
 						},
 						{
-							bullet: "Using modern design philosophies and implementation architecture such as TDD (test driven development), generators, dependency compilers, and so forth, to create robust products in the fastest time possible"
+							bullet: "Developed and optimized the entire advertising backend and frontend components of a popular mortgage website in Canada that registers more than twenty-thousand hits a day"
 						}
 					]
 				},
@@ -117,7 +117,7 @@ controllers.controller "ResumeController", ['$scope', '$resource',
 					end_time: ""
 					resume_lines: [
 						{
-							bullet: "Developer Languages: PHP, ROR, Java, JS, CSS, SCSS, AngularJS, MySQL, PostgreSQL"
+							bullet: "Developer Languages: PHP(laravel), Ruby(RoR), JS, CSS, SCSS, AngularJS, ReactJS, NOSQL, MySQL, PostgreSQL"
 						},
 						{
 							bullet: "Microsoft Suite: Word, Excel, PowerPoint"
