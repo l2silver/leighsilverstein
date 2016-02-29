@@ -4,6 +4,10 @@ controllers.controller "WritingController", ['$scope', '$resource',
 'globalService', ($scope, $resource, globalService) ->
 	$scope.writings = [
 		{
+			name: "Node vs Ruby"
+			link_name: "node_vs_ruby.html"
+		},
+		{
 			name: "Growth Hacking"
 			link_name: "growth_hacking.html"
 		},

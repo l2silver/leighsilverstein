@@ -11,7 +11,7 @@ controllers.controller "ResumeController", ['$scope', '$resource',
 					company: "Simplistics Inc."
 					city: "Toronto"
 					state: "ON"
-					start_time: "Aug 2015"
+					start_time: "2015"
 					end_time: "Current"
 					resume_lines: [
 						{
@@ -30,8 +30,8 @@ controllers.controller "ResumeController", ['$scope', '$resource',
 					company: "Camp Gesher"
 					city: "Toronto"
 					state: "ON"
-					start_time: "Oct 2014"
-					end_time: "Aug 2015"
+					start_time: "2014"
+					end_time: "2015"
 					resume_lines: [
 						{
 							bullet: "Analyzing camper data using linear and logit regressions to find trends in retention rates, and distributing those findings through general reports and PowerPoint presentations"
@@ -46,8 +46,8 @@ controllers.controller "ResumeController", ['$scope', '$resource',
 					company: "Ryerson University"
 					city: "Toronto"
 					state: "ON"
-					start_time: "Jan 2014"
-					end_time: "April 2014"
+					start_time: "2014"
+					end_time: "2014"
 					resume_lines: [
 						{
 							bullet: "Assisting and collaborating with the professor of Business in Creative Media in planning and designing course assignments that accurately assessed how much students had learnt in a class of more than 200 people"
@@ -62,8 +62,8 @@ controllers.controller "ResumeController", ['$scope', '$resource',
 					company: ""
 					city: "Toronto"
 					state: "ON"
-					start_time: "Sep 2014"
-					end_time: "Apr 2013"
+					start_time: "2010"
+					end_time: "2013"
 					resume_lines: [
 						{
 							bullet: "Creating premium DSLR videos for corporate and private customers using Adobe Photoshop, Illustrator, Premiere, After Effects, and Mocha"
@@ -79,8 +79,8 @@ controllers.controller "ResumeController", ['$scope', '$resource',
 					company: "Ryerson University"
 					city: "Toronto"
 					state: "ON"
-					start_time: "May 2013"
-					end_time: "Sep 2014"
+					start_time: "2013"
+					end_time: "2014"
 					resume_lines: [
 						{
 							bullet: "Researching innovative strategies, trends, and global developments that are shaping businesses across the world"
@@ -98,8 +98,8 @@ controllers.controller "ResumeController", ['$scope', '$resource',
 					company: "Ryerson University"
 					city: "Toronto"
 					state: "ON"
-					start_time: "Sep 2005"
-					end_time: "May 2014"
+					start_time: "2005"
+					end_time: "2009"
 					resume_lines: [
 					]
 				}
