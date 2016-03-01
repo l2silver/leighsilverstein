@@ -19,7 +19,7 @@ controllers.controller "HomeController", ['$scope', '$resource',
 	$scope.goTo = (path)->
 		$("#home #background-image").removeClass("show")
 		if path == "/git"
-			$window.open('https://github.com/l2silver');
+			$window.open('https://github.com/l2silver?tab=repositories');
 		else
 			$location.path(path)	
 ]
