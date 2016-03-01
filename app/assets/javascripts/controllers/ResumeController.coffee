@@ -15,7 +15,7 @@ controllers.controller "ResumeController", ['$scope', '$resource',
 					end_time: "Current"
 					resume_lines: [
 						{
-							bullet: "Used a combination of webpack, redux, react, and my own two-way-rest plugin, to develop complex websites with the most current frontend technologies"
+							bullet: "Used a combination of webpack, redux, react, immutable, and my own two-way-rest plugin, to develop complex websites with the most current frontend technologies"
 						},
 						{
 							bullet: "Brought BDD, and node plugins to the workplace to significantly speed up development time"
@@ -117,7 +117,7 @@ controllers.controller "ResumeController", ['$scope', '$resource',
 					end_time: ""
 					resume_lines: [
 						{
-							bullet: "Developer Languages: PHP(laravel), Ruby(RoR), JS, CSS, SCSS, AngularJS, ReactJS, NOSQL, MySQL, PostgreSQL"
+							bullet: "Developer Languages: Node, PHP(laravel), Ruby(RoR), JS, CSS, SCSS, AngularJS, ReactJS, NOSQL, MySQL, PostgreSQL"
 						},
 						{
 							bullet: "Microsoft Suite: Word, Excel, PowerPoint"
