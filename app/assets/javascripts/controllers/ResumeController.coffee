@@ -15,45 +15,13 @@ controllers.controller "ResumeController", ['$scope', '$resource',
 					end_time: "Current"
 					resume_lines: [
 						{
-							bullet: "Used a combination of webpack, redux, react, immutable, and my own two-way-rest plugin, to develop complex websites with the most current frontend technologies"
+							bullet: "Using a combination of Webpack, Redux, React, Immutable, and my own two-way-rest plugin, to develop complex websites with the most current frontend technologies"
 						},
 						{
-							bullet: "Brought BDD, and node plugins to the workplace to significantly speed up development time"
+							bullet: "Bringing BDD, and node plugins to the workplace to significantly speed up development time"
 						},
 						{
-							bullet: "Developed and optimized the entire advertising backend and frontend components of a popular mortgage website in Canada that registers more than twenty-thousand hits a day"
-						}
-					]
-				},
-				{
-					title: "Bookkeeper/Analyst"
-					company: "Camp Gesher"
-					city: "Toronto"
-					state: "ON"
-					start_time: "2014"
-					end_time: "2015"
-					resume_lines: [
-						{
-							bullet: "Analyzing camper data using linear and logit regressions to find trends in retention rates, and distributing those findings through general reports and PowerPoint presentations"
-						},
-						{
-							bullet: "Communicating with customers, board members, and staff members to certify that the bookkeeping was accurate based on government tax guidelines"
-						}
-					]
-				},
-				{
-					title: "Graduate Assistant"
-					company: "Ryerson University"
-					city: "Toronto"
-					state: "ON"
-					start_time: "2014"
-					end_time: "2014"
-					resume_lines: [
-						{
-							bullet: "Assisting and collaborating with the professor of Business in Creative Media in planning and designing course assignments that accurately assessed how much students had learnt in a class of more than 200 people"
-						},
-						{
-							bullet: "Grading short form assignments and thirty page business proposals with excellent attention to detail"
+							bullet: "Developing and optimizing the entire advertising backend and frontend components of a popular website in Canada that registers more than twenty-thousand hits a day"
 						}
 					]
 				},
@@ -117,10 +85,19 @@ controllers.controller "ResumeController", ['$scope', '$resource',
 					end_time: ""
 					resume_lines: [
 						{
-							bullet: "Developer Languages: Node, PHP(laravel), Ruby(RoR), JS, CSS, SCSS, AngularJS, ReactJS, NOSQL, MySQL, PostgreSQL"
+							bullet: "Frontend Languages and Libraries: JavaScript (ES6 with Babel), ImmutableJS, AngularJS, BackboneJS, ReactJS, jQuery, Redux, HTML5, CSS (Less, Sass)"
 						},
 						{
-							bullet: "Microsoft Suite: Word, Excel, PowerPoint"
+							bullet: "Backend Frameworks and Languages: Node(Sails), PHP(Laravel, CodeIgniter), Ruby(RoR)"
+						},
+						{
+							bullet: "Database: MySQL, PostgreSQL, MongoDB, Redis, Elastic"
+						},
+						{
+							bullet: "Build-tools: Gulp, Grunt, Yo, Bower, Webpack, Pagitter, NPM scripts"
+						},
+						{
+							bullet: "Systems: Linux, Mac, Windows, Virtual Machines"
 						},
 						{
 							bullet: "Photoshop, Illustrator, After Effects, Premiere, Mocha"
@@ -141,10 +118,16 @@ controllers.controller "ResumeController", ['$scope', '$resource',
 					end_time: ""
 					resume_lines: [
 						{
-							bullet: "Presume: The first ever open source Applicant Tracking System for Ruby on Rails"
+							bullet: "Two-Way-Rest: A react-redux plugin powered by immutablejs that facilitates changes to the state and any backend source"
 						},
 						{
-							bullet: "http://cvstom.org: A ROR developed application that uses machine learning to automate resume building based on specific job posts"
+							bullet: "Pagitter: A lightweight next generation file managing application (Node.js)"
+						},
+						{
+							bullet: "Presume: The first open source Applicant Tracking System for Ruby on Rails"
+						},
+						{
+							bullet: "http://cvstom.org: A Ruby on Rails developed application that uses machine learning to automate resume building based on specific job posts"
 						},
 						{
 							bullet: "GiveTo: A not-for-profit that produces free videos for charities in the GTA to support grant applications"

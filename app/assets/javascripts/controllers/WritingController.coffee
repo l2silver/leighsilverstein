@@ -8,6 +8,10 @@ controllers.controller "WritingController", ['$scope', '$resource',
 			link_name: "node_vs_ruby.html"
 		},
 		{
+			name: "Pagitterjs"
+			link_name: "pagitter.html"
+		},
+		{
 			name: "Growth Hacking"
 			link_name: "growth_hacking.html"
 		},
